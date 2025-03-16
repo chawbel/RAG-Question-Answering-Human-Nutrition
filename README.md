@@ -40,3 +40,21 @@ The pipeline also includes an API endpoint built with **FastAPI** and exposed vi
    ```bash
    git clone https://github.com/chawbel/rag-pipeline.git
    cd rag-pipeline
+
+2. Install dependencies:
+      ```bash
+      pip install -r requirements.txt
+
+---
+
+## Running the Application 
+
+1. Start the FastAPI server:
+   ```bash     
+   uvicorn main:app --host 0.0.0.0 --port 8000
+ 
+2. Expose the server to the web using Ngrok:
+   ```bash
+   ngrok http 8000
+  
+3. Access the API endpoint at the Ngrok URL provided (e.g., https://random.ngrok.io/docs).
